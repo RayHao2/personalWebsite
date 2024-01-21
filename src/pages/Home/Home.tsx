@@ -4,7 +4,7 @@ import { Grid, Container, Box, Typography } from "@mui/material";
 export default function Home() {
     return (
         <Container>
-            <Container>HOME PAGE</Container>
+            <Box>HOEM PAGE</Box>
         </Container>
     )
 }

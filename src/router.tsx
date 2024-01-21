@@ -5,6 +5,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import ErrorPage from "./pages/Error/Error";
 export type RoutePathDefinition = RouteObject & {
   title: string;
 };
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/Home" element={<Home />} handle={{ crumb: "Home" }}>
       <Route index element={<Home />} />
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 );
